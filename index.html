@@ -632,36 +632,34 @@
                                 <p class="media-description">An AI-told story about living with pneumonia, created with <a href="https://www.animaker.com" target="_blank" style="color: var(--primary-blue); text-decoration: none; font-weight: 500;">Animaker.com</a></p>
                             </div>
                         </div>
-                        <div class="media-item">
-                            <div class="media-placeholder">🎥</div>
-                            <div class="media-content">
-                                <h4 class="media-title">Breathing Mechanics Explained</h4>
-                                <p class="media-description">Interactive video showing how pneumonia disrupts normal breathing patterns.</p>
-                            </div>
-                        </div>
-                        <div class="media-item">
-                            <div class="media-placeholder">🖼️</div>
-                            <div class="media-content">
-                                <h4 class="media-title">Bacterial vs. Viral Pneumonia</h4>
-                                <p class="media-description">AI-generated comparative imagery showing different types of pneumonia causes.</p>
-                            </div>
-                        </div>
                     </div>
                     
                     <div style="margin-top: 3rem;">
                         <h3 style="text-align: center; margin-bottom: 2rem; font-family: var(--serif-font); color: var(--primary-blue);">Upload Your Educational Content</h3>
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-                            <div class="upload-area" onclick="document.getElementById('video-upload').click()">
-                                <div class="upload-icon">📹</div>
-                                <div class="upload-text">Upload AI Videos</div>
-                                <div class="upload-subtext">MP4, MOV, AVI files accepted</div>
-                                <input type="file" id="video-upload" style="display: none;" accept="video/*" multiple>
+                            <div class="media-item">
+                                <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/aKduNgfePLU/hqdefault.jpg');" onclick="playVideo(this)">
+                                    <div class="video-play-btn">▶</div>
+                                </div>
+                                <div class="video-iframe-container">
+                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/aKduNgfePLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="media-content">
+                                    <h4 class="media-title">Breathing Mechanics Explained</h4>
+                                    <p class="media-description">Educational video showing how pneumonia disrupts normal breathing patterns.</p>
+                                </div>
                             </div>
-                            <div class="upload-area" onclick="document.getElementById('photo-upload').click()">
-                                <div class="upload-icon">🖼️</div>
-                                <div class="upload-text">Upload AI Photos</div>
-                                <div class="upload-subtext">JPG, PNG, GIF files accepted</div>
-                                <input type="file" id="photo-upload" style="display: none;" accept="image/*" multiple>
+                            <div class="media-item">
+                                <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/gPOFtuDmjhI/hqdefault.jpg');" onclick="playVideo(this)">
+                                    <div class="video-play-btn">▶</div>
+                                </div>
+                                <div class="video-iframe-container">
+                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/gPOFtuDmjhI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="media-content">
+                                    <h4 class="media-title">Bacterial vs. Viral Pneumonia</h4>
+                                    <p class="media-description">Comparative analysis of different types of pneumonia causes and presentations.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
